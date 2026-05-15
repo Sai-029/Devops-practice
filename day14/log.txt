@@ -1,0 +1,4 @@
+INFO started
+ERROR failed
+ERROR timeout
+SUCCESS login
