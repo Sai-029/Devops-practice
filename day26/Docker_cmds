@@ -1,0 +1,36 @@
+docker images                 # List all Docker images available on your system
+
+docker pull imagename         # Download an image from Docker Hub
+# Example: docker pull nginx
+
+docker images                 # Verify that the downloaded image exists
+
+docker ps                     # Show only currently running containers
+
+docker ps -a                  # Show all containers (running, stopped, exited)
+
+docker run nginx              # Create and run an nginx container in interactive/foreground mode
+
+docker run -d nginx           # Run nginx container in detached mode (background)
+
+docker run -p 80:80 -d nginx  # Map host port 80 to container port 80 and run in background
+# host_port:container_port
+
+docker run -p 8080:80 -d httpd # Run Apache (httpd) container
+# Access it using http://localhost:8080
+
+docker run httpd             # Run Apache container in foreground mode
+
+docker stop container_id      # Stop a running container
+
+docker start container_id     # Start a stopped container
+
+docker restart container_id   # Restart a container
+
+docker rm container_id        # Remove a container
+
+docker rmi image_id           # Remove a Docker image
+
+docker logs container_id      # View container logs
+
+docker exec -it container_id bash  # Open terminal inside a running container
